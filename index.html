@@ -1,661 +1,134 @@
 <!DOCTYPE html>
-<!-- saved from url=(0067)file:///C:/Users/Siri%20Y%20Deepak/Downloads/task-manager-html.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="Tasks">
-    <title>Task Manager</title>
-    <script src="./task_files/saved_resource"></script>
-    <style>
-        body {
-            -webkit-user-select: none;
-            -webkit-touch-callout: none;
-        }
-    </style>
-<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.absolute{position:absolute}.relative{position:relative}.left-3{left:0.75rem}.top-1\/2{top:50%}.mx-auto{margin-left:auto;margin-right:auto}.mb-2{margin-bottom:0.5rem}.mb-6{margin-bottom:1.5rem}.flex{display:flex}.min-h-screen{min-height:100vh}.w-full{width:100%}.max-w-2xl{max-width:42rem}.flex-1{flex:1 1 0%}.-translate-y-1\/2{--tw-translate-y:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.items-center{align-items:center}.gap-2{gap:0.5rem}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.overflow-x-auto{overflow-x:auto}.whitespace-nowrap{white-space:nowrap}.rounded-2xl{border-radius:1rem}.rounded-lg{border-radius:0.5rem}.border-2{border-width:2px}.border-gray-200{--tw-border-opacity:1;border-color:rgb(229 231 235 / var(--tw-border-opacity, 1))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.bg-purple-500{--tw-bg-opacity:1;background-color:rgb(168 85 247 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.from-purple-50{--tw-gradient-from:#faf5ff var(--tw-gradient-from-position);--tw-gradient-to:rgb(250 245 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-blue-50{--tw-gradient-to:#eff6ff var(--tw-gradient-to-position)}.p-4{padding:1rem}.p-6{padding:1.5rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-8{padding-top:2rem;padding-bottom:2rem}.pl-10{padding-left:2.5rem}.pr-4{padding-right:1rem}.text-center{text-align:center}.text-3xl{font-size:1.875rem;line-height:2.25rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-gray-800{--tw-text-opacity:1;color:rgb(31 41 55 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.hover\:bg-gray-200:hover{--tw-bg-opacity:1;background-color:rgb(229 231 235 / var(--tw-bg-opacity, 1))}.hover\:bg-purple-600:hover{--tw-bg-opacity:1;background-color:rgb(147 51 234 / var(--tw-bg-opacity, 1))}.focus\:border-purple-400:focus{--tw-border-opacity:1;border-color:rgb(192 132 252 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}@media (min-width: 640px){.sm\:p-8{padding:2rem}.sm\:text-4xl{font-size:2.25rem;line-height:2.5rem}}</style><script>"use strict";
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Task Manager</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
-function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
-function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
-function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
-function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-var _React = React,
-  useState = _React.useState,
-  useEffect = _React.useEffect;
-var Check = function Check(_ref) {
-  var _ref$size = _ref.size,
-    size = _ref$size === void 0 ? 24 : _ref$size,
-    _ref$className = _ref.className,
-    className = _ref$className === void 0 ? "" : _ref$className;
-  return /*#__PURE__*/React.createElement("svg", {
-    width: size,
-    height: size,
-    viewBox: "0 0 24 24",
-    fill: "none",
-    stroke: "currentColor",
-    strokeWidth: "2",
-    strokeLinecap: "round",
-    strokeLinejoin: "round",
-    className: className
-  }, /*#__PURE__*/React.createElement("polyline", {
-    points: "20 6 9 17 4 12"
-  }));
-};
-var Trash2 = function Trash2(_ref2) {
-  var _ref2$size = _ref2.size,
-    size = _ref2$size === void 0 ? 24 : _ref2$size,
-    _ref2$className = _ref2.className,
-    className = _ref2$className === void 0 ? "" : _ref2$className;
-  return /*#__PURE__*/React.createElement("svg", {
-    width: size,
-    height: size,
-    viewBox: "0 0 24 24",
-    fill: "none",
-    stroke: "currentColor",
-    strokeWidth: "2",
-    strokeLinecap: "round",
-    strokeLinejoin: "round",
-    className: className
-  }, /*#__PURE__*/React.createElement("polyline", {
-    points: "3 6 5 6 21 6"
-  }), /*#__PURE__*/React.createElement("path", {
-    d: "M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
-  }), /*#__PURE__*/React.createElement("line", {
-    x1: "10",
-    y1: "11",
-    x2: "10",
-    y2: "17"
-  }), /*#__PURE__*/React.createElement("line", {
-    x1: "14",
-    y1: "11",
-    x2: "14",
-    y2: "17"
-  }));
-};
-var Plus = function Plus(_ref3) {
-  var _ref3$size = _ref3.size,
-    size = _ref3$size === void 0 ? 24 : _ref3$size,
-    _ref3$className = _ref3.className,
-    className = _ref3$className === void 0 ? "" : _ref3$className;
-  return /*#__PURE__*/React.createElement("svg", {
-    width: size,
-    height: size,
-    viewBox: "0 0 24 24",
-    fill: "none",
-    stroke: "currentColor",
-    strokeWidth: "2",
-    strokeLinecap: "round",
-    strokeLinejoin: "round",
-    className: className
-  }, /*#__PURE__*/React.createElement("line", {
-    x1: "12",
-    y1: "5",
-    x2: "12",
-    y2: "19"
-  }), /*#__PURE__*/React.createElement("line", {
-    x1: "5",
-    y1: "12",
-    x2: "19",
-    y2: "12"
-  }));
-};
-var Circle = function Circle(_ref4) {
-  var _ref4$size = _ref4.size,
-    size = _ref4$size === void 0 ? 24 : _ref4$size,
-    _ref4$className = _ref4.className,
-    className = _ref4$className === void 0 ? "" : _ref4$className;
-  return /*#__PURE__*/React.createElement("svg", {
-    width: size,
-    height: size,
-    viewBox: "0 0 24 24",
-    fill: "none",
-    stroke: "currentColor",
-    strokeWidth: "2",
-    strokeLinecap: "round",
-    strokeLinejoin: "round",
-    className: className
-  }, /*#__PURE__*/React.createElement("circle", {
-    cx: "12",
-    cy: "12",
-    r: "10"
-  }));
-};
-var Calendar = function Calendar(_ref5) {
-  var _ref5$size = _ref5.size,
-    size = _ref5$size === void 0 ? 24 : _ref5$size,
-    _ref5$className = _ref5.className,
-    className = _ref5$className === void 0 ? "" : _ref5$className;
-  return /*#__PURE__*/React.createElement("svg", {
-    width: size,
-    height: size,
-    viewBox: "0 0 24 24",
-    fill: "none",
-    stroke: "currentColor",
-    strokeWidth: "2",
-    strokeLinecap: "round",
-    strokeLinejoin: "round",
-    className: className
-  }, /*#__PURE__*/React.createElement("rect", {
-    x: "3",
-    y: "4",
-    width: "18",
-    height: "18",
-    rx: "2",
-    ry: "2"
-  }), /*#__PURE__*/React.createElement("line", {
-    x1: "16",
-    y1: "2",
-    x2: "16",
-    y2: "6"
-  }), /*#__PURE__*/React.createElement("line", {
-    x1: "8",
-    y1: "2",
-    x2: "8",
-    y2: "6"
-  }), /*#__PURE__*/React.createElement("line", {
-    x1: "3",
-    y1: "10",
-    x2: "21",
-    y2: "10"
-  }));
-};
-function TaskManager() {
-  var _useState = useState([]),
-    _useState2 = _slicedToArray(_useState, 2),
-    tasks = _useState2[0],
-    setTasks = _useState2[1];
-  var _useState3 = useState(''),
-    _useState4 = _slicedToArray(_useState3, 2),
-    inputValue = _useState4[0],
-    setInputValue = _useState4[1];
-  var _useState5 = useState(''),
-    _useState6 = _slicedToArray(_useState5, 2),
-    dueDate = _useState6[0],
-    setDueDate = _useState6[1];
-  var _useState7 = useState('all'),
-    _useState8 = _slicedToArray(_useState7, 2),
-    filter = _useState8[0],
-    setFilter = _useState8[1];
-  useEffect(function () {
-    var saved = localStorage.getItem('tasks');
-    if (saved) {
-      setTasks(JSON.parse(saved));
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- React -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Babel -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body class="bg-gradient-to-br from-purple-50 to-blue-50 min-h-screen">
+
+  <!-- ROOT -->
+  <div id="root"></div>
+
+  <!-- APP CODE -->
+  <script type="text/babel">
+    const { useState, useEffect } = React;
+
+    function TaskManager() {
+      const [tasks, setTasks] = useState([]);
+      const [inputValue, setInputValue] = useState("");
+      const [dueDate, setDueDate] = useState("");
+
+      useEffect(() => {
+        const saved = localStorage.getItem("tasks");
+        if (saved) setTasks(JSON.parse(saved));
+      }, []);
+
+      useEffect(() => {
+        localStorage.setItem("tasks", JSON.stringify(tasks));
+      }, [tasks]);
+
+      const addTask = () => {
+        if (!inputValue.trim()) return;
+
+        setTasks([
+          ...tasks,
+          {
+            id: Date.now(),
+            text: inputValue,
+            completed: false,
+            dueDate
+          }
+        ]);
+
+        setInputValue("");
+        setDueDate("");
+      };
+
+      const toggleTask = (id) => {
+        setTasks(
+          tasks.map(task =>
+            task.id === id
+              ? { ...task, completed: !task.completed }
+              : task
+          )
+        );
+      };
+
+      const deleteTask = (id) => {
+        setTasks(tasks.filter(task => task.id !== id));
+      };
+
+      return (
+        <div className="max-w-xl mx-auto p-6">
+          <div className="bg-white p-6 rounded-xl shadow-xl">
+            <h1 className="text-3xl font-bold mb-4 text-center">
+              Task Manager
+            </h1>
+
+            <input
+              className="w-full p-3 border rounded mb-2"
+              placeholder="Enter task"
+              value={inputValue}
+              onChange={(e) => setInputValue(e.target.value)}
+              onKeyDown={(e) => e.key === "Enter" && addTask()}
+            />
+
+            <input
+              type="date"
+              className="w-full p-3 border rounded mb-3"
+              value={dueDate}
+              onChange={(e) => setDueDate(e.target.value)}
+            />
+
+            <button
+              onClick={addTask}
+              className="w-full bg-purple-500 hover:bg-purple-600 text-white py-3 rounded font-semibold"
+            >
+              ➕ Add Task
+            </button>
+
+            <ul className="mt-4 space-y-2">
+              {tasks.map(task => (
+                <li
+                  key={task.id}
+                  className="flex justify-between items-center p-3 bg-gray-100 rounded"
+                >
+                  <span
+                    onClick={() => toggleTask(task.id)}
+                    className={`cursor-pointer ${
+                      task.completed ? "line-through text-gray-400" : ""
+                    }`}
+                  >
+                    {task.text}
+                  </span>
+
+                  <button
+                    onClick={() => deleteTask(task.id)}
+                    className="text-red-500 hover:text-red-700"
+                  >
+                    🗑
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      );
     }
-  }, []);
-  useEffect(function () {
-    localStorage.setItem('tasks', JSON.stringify(tasks));
-  }, [tasks]);
-  var addTask = function addTask() {
-    if (inputValue.trim()) {
-      setTasks([].concat(_toConsumableArray(tasks), [{
-        id: Date.now(),
-        text: inputValue,
-        completed: false,
-        createdAt: new Date().toISOString(),
-        dueDate: dueDate || null
-      }]));
-      setInputValue('');
-      setDueDate('');
-    }
-  };
-  var toggleTask = function toggleTask(id) {
-    setTasks(tasks.map(function (task) {
-      return task.id === id ? _objectSpread(_objectSpread({}, task), {}, {
-        completed: !task.completed
-      }) : task;
-    }));
-  };
-  var deleteTask = function deleteTask(id) {
-    setTasks(tasks.filter(function (task) {
-      return task.id !== id;
-    }));
-  };
-  var filteredTasks = tasks.filter(function (task) {
-    if (filter === 'active') return !task.completed;
-    if (filter === 'completed') return task.completed;
-    return true;
-  });
-  var activeCount = tasks.filter(function (t) {
-    return !t.completed;
-  }).length;
-  var formatDate = function formatDate(dateString) {
-    var date = new Date(dateString);
-    var now = new Date();
-    var diffMs = now - date;
-    var diffMins = Math.floor(diffMs / 60000);
-    var diffHours = Math.floor(diffMs / 3600000);
-    var diffDays = Math.floor(diffMs / 86400000);
-    if (diffMins < 1) return 'Just now';
-    if (diffMins < 60) return "".concat(diffMins, "m ago");
-    if (diffHours < 24) return "".concat(diffHours, "h ago");
-    if (diffDays === 1) return 'Yesterday';
-    if (diffDays < 7) return "".concat(diffDays, "d ago");
-    return date.toLocaleDateString('en-US', {
-      month: 'short',
-      day: 'numeric',
-      year: date.getFullYear() !== now.getFullYear() ? 'numeric' : undefined
-    });
-  };
-  var formatDueDate = function formatDueDate(dateString) {
-    if (!dateString) return null;
-    var date = new Date(dateString);
-    var now = new Date();
-    now.setHours(0, 0, 0, 0);
-    var dueDateTime = new Date(date);
-    dueDateTime.setHours(0, 0, 0, 0);
-    var diffDays = Math.floor((dueDateTime - now) / 86400000);
-    if (diffDays < 0) return {
-      text: 'Overdue',
-      color: 'text-red-500'
-    };
-    if (diffDays === 0) return {
-      text: 'Today',
-      color: 'text-orange-500'
-    };
-    if (diffDays === 1) return {
-      text: 'Tomorrow',
-      color: 'text-yellow-500'
-    };
-    if (diffDays < 7) return {
-      text: "".concat(diffDays, "d left"),
-      color: 'text-blue-500'
-    };
-    return {
-      text: date.toLocaleDateString('en-US', {
-        month: 'short',
-        day: 'numeric'
-      }),
-      color: 'text-gray-500'
-    };
-  };
-  var getTodayDate = function getTodayDate() {
-    var today = new Date();
-    return today.toISOString().split('T')[0];
-  };
-  return /*#__PURE__*/React.createElement("div", {
-    className: "min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 p-4 sm:p-8"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "max-w-2xl mx-auto"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "bg-white rounded-2xl shadow-xl p-6 sm:p-8"
-  }, /*#__PURE__*/React.createElement("h1", {
-    className: "text-3xl sm:text-4xl font-bold text-gray-800 mb-2"
-  }, "Task Manager"), /*#__PURE__*/React.createElement("p", {
-    className: "text-gray-500 mb-6"
-  }, activeCount, " task", activeCount !== 1 ? 's' : '', " remaining"), /*#__PURE__*/React.createElement("div", {
-    className: "space-y-3 mb-6"
-  }, /*#__PURE__*/React.createElement("input", {
-    type: "text",
-    value: inputValue,
-    onChange: function onChange(e) {
-      return setInputValue(e.target.value);
-    },
-    onKeyPress: function onKeyPress(e) {
-      return e.key === 'Enter' && addTask();
-    },
-    placeholder: "What needs to be done?",
-    className: "w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-purple-400 transition"
-  }), /*#__PURE__*/React.createElement("div", {
-    className: "flex gap-2"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "flex-1 relative"
-  }, /*#__PURE__*/React.createElement(Calendar, {
-    size: 20,
-    className: "absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
-  }), /*#__PURE__*/React.createElement("input", {
-    type: "date",
-    value: dueDate,
-    onChange: function onChange(e) {
-      return setDueDate(e.target.value);
-    },
-    min: getTodayDate(),
-    className: "w-full pl-10 pr-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-purple-400 transition"
-  })), /*#__PURE__*/React.createElement("button", {
-    onClick: addTask,
-    className: "bg-purple-500 hover:bg-purple-600 text-white px-6 py-3 rounded-lg font-medium transition flex items-center gap-2"
-  }, /*#__PURE__*/React.createElement(Plus, {
-    size: 20
-  }), "Add"))), /*#__PURE__*/React.createElement("div", {
-    className: "flex gap-2 mb-6 overflow-x-auto"
-  }, ['all', 'active', 'completed'].map(function (f) {
-    return /*#__PURE__*/React.createElement("button", {
-      key: f,
-      onClick: function onClick() {
-        return setFilter(f);
-      },
-      className: "px-4 py-2 rounded-lg font-medium transition whitespace-nowrap ".concat(filter === f ? 'bg-purple-500 text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200')
-    }, f.charAt(0).toUpperCase() + f.slice(1));
-  })), /*#__PURE__*/React.createElement("div", {
-    className: "space-y-2"
-  }, filteredTasks.length === 0 ? /*#__PURE__*/React.createElement("p", {
-    className: "text-center text-gray-400 py-8"
-  }, filter === 'completed' ? 'No completed tasks yet' : 'No tasks yet. Add one above!') : filteredTasks.map(function (task) {
-    var dueDateInfo = formatDueDate(task.dueDate);
-    return /*#__PURE__*/React.createElement("div", {
-      key: task.id,
-      className: "flex items-center gap-3 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition group"
-    }, /*#__PURE__*/React.createElement("button", {
-      onClick: function onClick() {
-        return toggleTask(task.id);
-      },
-      className: "flex-shrink-0"
-    }, task.completed ? /*#__PURE__*/React.createElement("div", {
-      className: "w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center"
-    }, /*#__PURE__*/React.createElement(Check, {
-      size: 16,
-      className: "text-white"
-    })) : /*#__PURE__*/React.createElement(Circle, {
-      size: 24,
-      className: "text-gray-300 hover:text-purple-400"
-    })), /*#__PURE__*/React.createElement("div", {
-      className: "flex-1 min-w-0"
-    }, /*#__PURE__*/React.createElement("span", {
-      className: "block ".concat(task.completed ? 'line-through text-gray-400' : 'text-gray-700')
-    }, task.text), /*#__PURE__*/React.createElement("div", {
-      className: "flex gap-3 mt-1 flex-wrap"
-    }, /*#__PURE__*/React.createElement("span", {
-      className: "text-xs text-gray-400"
-    }, formatDate(task.createdAt)), dueDateInfo && /*#__PURE__*/React.createElement("span", {
-      className: "text-xs font-medium ".concat(dueDateInfo.color)
-    }, "Due: ", dueDateInfo.text))), /*#__PURE__*/React.createElement("button", {
-      onClick: function onClick() {
-        return deleteTask(task.id);
-      },
-      className: "opacity-0 group-hover:opacity-100 text-red-400 hover:text-red-600 transition flex-shrink-0"
-    }, /*#__PURE__*/React.createElement(Trash2, {
-      size: 18
-    })));
-  })), tasks.length > 0 && /*#__PURE__*/React.createElement("div", {
-    className: "mt-6 pt-6 border-t border-gray-200 flex justify-between text-sm text-gray-500"
-  }, /*#__PURE__*/React.createElement("span", null, tasks.length, " total task", tasks.length !== 1 ? 's' : ''), /*#__PURE__*/React.createElement("button", {
-    onClick: function onClick() {
-      return setTasks(tasks.filter(function (t) {
-        return !t.completed;
-      }));
-    },
-    className: "text-red-400 hover:text-red-600 transition"
-  }, "Clear completed")))));
-}
-ReactDOM.render( /*#__PURE__*/React.createElement(TaskManager, null), document.getElementById('root'));
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfUmVhY3QiLCJSZWFjdCIsInVzZVN0YXRlIiwidXNlRWZmZWN0IiwiQ2hlY2siLCJfcmVmIiwiX3JlZiRzaXplIiwic2l6ZSIsIl9yZWYkY2xhc3NOYW1lIiwiY2xhc3NOYW1lIiwiY3JlYXRlRWxlbWVudCIsIndpZHRoIiwiaGVpZ2h0Iiwidmlld0JveCIsImZpbGwiLCJzdHJva2UiLCJzdHJva2VXaWR0aCIsInN0cm9rZUxpbmVjYXAiLCJzdHJva2VMaW5lam9pbiIsInBvaW50cyIsIlRyYXNoMiIsIl9yZWYyIiwiX3JlZjIkc2l6ZSIsIl9yZWYyJGNsYXNzTmFtZSIsImQiLCJ4MSIsInkxIiwieDIiLCJ5MiIsIlBsdXMiLCJfcmVmMyIsIl9yZWYzJHNpemUiLCJfcmVmMyRjbGFzc05hbWUiLCJDaXJjbGUiLCJfcmVmNCIsIl9yZWY0JHNpemUiLCJfcmVmNCRjbGFzc05hbWUiLCJjeCIsImN5IiwiciIsIkNhbGVuZGFyIiwiX3JlZjUiLCJfcmVmNSRzaXplIiwiX3JlZjUkY2xhc3NOYW1lIiwieCIsInkiLCJyeCIsInJ5IiwiVGFza01hbmFnZXIiLCJfdXNlU3RhdGUiLCJfdXNlU3RhdGUyIiwiX3NsaWNlZFRvQXJyYXkiLCJ0YXNrcyIsInNldFRhc2tzIiwiX3VzZVN0YXRlMyIsIl91c2VTdGF0ZTQiLCJpbnB1dFZhbHVlIiwic2V0SW5wdXRWYWx1ZSIsIl91c2VTdGF0ZTUiLCJfdXNlU3RhdGU2IiwiZHVlRGF0ZSIsInNldER1ZURhdGUiLCJfdXNlU3RhdGU3IiwiX3VzZVN0YXRlOCIsImZpbHRlciIsInNldEZpbHRlciIsInNhdmVkIiwibG9jYWxTdG9yYWdlIiwiZ2V0SXRlbSIsIkpTT04iLCJwYXJzZSIsInNldEl0ZW0iLCJzdHJpbmdpZnkiLCJhZGRUYXNrIiwidHJpbSIsImNvbmNhdCIsIl90b0NvbnN1bWFibGVBcnJheSIsImlkIiwiRGF0ZSIsIm5vdyIsInRleHQiLCJjb21wbGV0ZWQiLCJjcmVhdGVkQXQiLCJ0b0lTT1N0cmluZyIsInRvZ2dsZVRhc2siLCJtYXAiLCJ0YXNrIiwiX29iamVjdFNwcmVhZCIsImRlbGV0ZVRhc2siLCJmaWx0ZXJlZFRhc2tzIiwiYWN0aXZlQ291bnQiLCJ0IiwibGVuZ3RoIiwiZm9ybWF0RGF0ZSIsImRhdGVTdHJpbmciLCJkYXRlIiwiZGlmZk1zIiwiZGlmZk1pbnMiLCJNYXRoIiwiZmxvb3IiLCJkaWZmSG91cnMiLCJkaWZmRGF5cyIsInRvTG9jYWxlRGF0ZVN0cmluZyIsIm1vbnRoIiwiZGF5IiwieWVhciIsImdldEZ1bGxZZWFyIiwidW5kZWZpbmVkIiwiZm9ybWF0RHVlRGF0ZSIsInNldEhvdXJzIiwiZHVlRGF0ZVRpbWUiLCJjb2xvciIsImdldFRvZGF5RGF0ZSIsInRvZGF5Iiwic3BsaXQiLCJ0eXBlIiwidmFsdWUiLCJvbkNoYW5nZSIsImUiLCJ0YXJnZXQiLCJvbktleVByZXNzIiwia2V5IiwicGxhY2Vob2xkZXIiLCJtaW4iLCJvbkNsaWNrIiwiZiIsImNoYXJBdCIsInRvVXBwZXJDYXNlIiwic2xpY2UiLCJkdWVEYXRlSW5mbyIsIlJlYWN0RE9NIiwicmVuZGVyIiwiZG9jdW1lbnQiLCJnZXRFbGVtZW50QnlJZCJdLCJzb3VyY2VzIjpbIklubGluZSBCYWJlbCBzY3JpcHQiXSwic291cmNlc0NvbnRlbnQiOlsiXG4gICAgICAgIGNvbnN0IHsgdXNlU3RhdGUsIHVzZUVmZmVjdCB9ID0gUmVhY3Q7XG5cbiAgICAgICAgY29uc3QgQ2hlY2sgPSAoeyBzaXplID0gMjQsIGNsYXNzTmFtZSA9IFwiXCIgfSkgPT4gKFxuICAgICAgICAgICAgPHN2ZyB3aWR0aD17c2l6ZX0gaGVpZ2h0PXtzaXplfSB2aWV3Qm94PVwiMCAwIDI0IDI0XCIgZmlsbD1cIm5vbmVcIiBzdHJva2U9XCJjdXJyZW50Q29sb3JcIiBzdHJva2VXaWR0aD1cIjJcIiBzdHJva2VMaW5lY2FwPVwicm91bmRcIiBzdHJva2VMaW5lam9pbj1cInJvdW5kXCIgY2xhc3NOYW1lPXtjbGFzc05hbWV9PlxuICAgICAgICAgICAgICAgIDxwb2x5bGluZSBwb2ludHM9XCIyMCA2IDkgMTcgNCAxMlwiPjwvcG9seWxpbmU+XG4gICAgICAgICAgICA8L3N2Zz5cbiAgICAgICAgKTtcblxuICAgICAgICBjb25zdCBUcmFzaDIgPSAoeyBzaXplID0gMjQsIGNsYXNzTmFtZSA9IFwiXCIgfSkgPT4gKFxuICAgICAgICAgICAgPHN2ZyB3aWR0aD17c2l6ZX0gaGVpZ2h0PXtzaXplfSB2aWV3Qm94PVwiMCAwIDI0IDI0XCIgZmlsbD1cIm5vbmVcIiBzdHJva2U9XCJjdXJyZW50Q29sb3JcIiBzdHJva2VXaWR0aD1cIjJcIiBzdHJva2VMaW5lY2FwPVwicm91bmRcIiBzdHJva2VMaW5lam9pbj1cInJvdW5kXCIgY2xhc3NOYW1lPXtjbGFzc05hbWV9PlxuICAgICAgICAgICAgICAgIDxwb2x5bGluZSBwb2ludHM9XCIzIDYgNSA2IDIxIDZcIj48L3BvbHlsaW5lPlxuICAgICAgICAgICAgICAgIDxwYXRoIGQ9XCJNMTkgNnYxNGEyIDIgMCAwIDEtMiAySDdhMiAyIDAgMCAxLTItMlY2bTMgMFY0YTIgMiAwIDAgMSAyLTJoNGEyIDIgMCAwIDEgMiAydjJcIj48L3BhdGg+XG4gICAgICAgICAgICAgICAgPGxpbmUgeDE9XCIxMFwiIHkxPVwiMTFcIiB4Mj1cIjEwXCIgeTI9XCIxN1wiPjwvbGluZT5cbiAgICAgICAgICAgICAgICA8bGluZSB4MT1cIjE0XCIgeTE9XCIxMVwiIHgyPVwiMTRcIiB5Mj1cIjE3XCI+PC9saW5lPlxuICAgICAgICAgICAgPC9zdmc+XG4gICAgICAgICk7XG5cbiAgICAgICAgY29uc3QgUGx1cyA9ICh7IHNpemUgPSAyNCwgY2xhc3NOYW1lID0gXCJcIiB9KSA9PiAoXG4gICAgICAgICAgICA8c3ZnIHdpZHRoPXtzaXplfSBoZWlnaHQ9e3NpemV9IHZpZXdCb3g9XCIwIDAgMjQgMjRcIiBmaWxsPVwibm9uZVwiIHN0cm9rZT1cImN1cnJlbnRDb2xvclwiIHN0cm9rZVdpZHRoPVwiMlwiIHN0cm9rZUxpbmVjYXA9XCJyb3VuZFwiIHN0cm9rZUxpbmVqb2luPVwicm91bmRcIiBjbGFzc05hbWU9e2NsYXNzTmFtZX0+XG4gICAgICAgICAgICAgICAgPGxpbmUgeDE9XCIxMlwiIHkxPVwiNVwiIHgyPVwiMTJcIiB5Mj1cIjE5XCI+PC9saW5lPlxuICAgICAgICAgICAgICAgIDxsaW5lIHgxPVwiNVwiIHkxPVwiMTJcIiB4Mj1cIjE5XCIgeTI9XCIxMlwiPjwvbGluZT5cbiAgICAgICAgICAgIDwvc3ZnPlxuICAgICAgICApO1xuXG4gICAgICAgIGNvbnN0IENpcmNsZSA9ICh7IHNpemUgPSAyNCwgY2xhc3NOYW1lID0gXCJcIiB9KSA9PiAoXG4gICAgICAgICAgICA8c3ZnIHdpZHRoPXtzaXplfSBoZWlnaHQ9e3NpemV9IHZpZXdCb3g9XCIwIDAgMjQgMjRcIiBmaWxsPVwibm9uZVwiIHN0cm9rZT1cImN1cnJlbnRDb2xvclwiIHN0cm9rZVdpZHRoPVwiMlwiIHN0cm9rZUxpbmVjYXA9XCJyb3VuZFwiIHN0cm9rZUxpbmVqb2luPVwicm91bmRcIiBjbGFzc05hbWU9e2NsYXNzTmFtZX0+XG4gICAgICAgICAgICAgICAgPGNpcmNsZSBjeD1cIjEyXCIgY3k9XCIxMlwiIHI9XCIxMFwiPjwvY2lyY2xlPlxuICAgICAgICAgICAgPC9zdmc+XG4gICAgICAgICk7XG5cbiAgICAgICAgY29uc3QgQ2FsZW5kYXIgPSAoeyBzaXplID0gMjQsIGNsYXNzTmFtZSA9IFwiXCIgfSkgPT4gKFxuICAgICAgICAgICAgPHN2ZyB3aWR0aD17c2l6ZX0gaGVpZ2h0PXtzaXplfSB2aWV3Qm94PVwiMCAwIDI0IDI0XCIgZmlsbD1cIm5vbmVcIiBzdHJva2U9XCJjdXJyZW50Q29sb3JcIiBzdHJva2VXaWR0aD1cIjJcIiBzdHJva2VMaW5lY2FwPVwicm91bmRcIiBzdHJva2VMaW5lam9pbj1cInJvdW5kXCIgY2xhc3NOYW1lPXtjbGFzc05hbWV9PlxuICAgICAgICAgICAgICAgIDxyZWN0IHg9XCIzXCIgeT1cIjRcIiB3aWR0aD1cIjE4XCIgaGVpZ2h0PVwiMThcIiByeD1cIjJcIiByeT1cIjJcIj48L3JlY3Q+XG4gICAgICAgICAgICAgICAgPGxpbmUgeDE9XCIxNlwiIHkxPVwiMlwiIHgyPVwiMTZcIiB5Mj1cIjZcIj48L2xpbmU+XG4gICAgICAgICAgICAgICAgPGxpbmUgeDE9XCI4XCIgeTE9XCIyXCIgeDI9XCI4XCIgeTI9XCI2XCI+PC9saW5lPlxuICAgICAgICAgICAgICAgIDxsaW5lIHgxPVwiM1wiIHkxPVwiMTBcIiB4Mj1cIjIxXCIgeTI9XCIxMFwiPjwvbGluZT5cbiAgICAgICAgICAgIDwvc3ZnPlxuICAgICAgICApO1xuXG4gICAgICAgIGZ1bmN0aW9uIFRhc2tNYW5hZ2VyKCkge1xuICAgICAgICAgICAgY29uc3QgW3Rhc2tzLCBzZXRUYXNrc10gPSB1c2VTdGF0ZShbXSk7XG4gICAgICAgICAgICBjb25zdCBbaW5wdXRWYWx1ZSwgc2V0SW5wdXRWYWx1ZV0gPSB1c2VTdGF0ZSgnJyk7XG4gICAgICAgICAgICBjb25zdCBbZHVlRGF0ZSwgc2V0RHVlRGF0ZV0gPSB1c2VTdGF0ZSgnJyk7XG4gICAgICAgICAgICBjb25zdCBbZmlsdGVyLCBzZXRGaWx0ZXJdID0gdXNlU3RhdGUoJ2FsbCcpO1xuXG4gICAgICAgICAgICB1c2VFZmZlY3QoKCkgPT4ge1xuICAgICAgICAgICAgICAgIGNvbnN0IHNhdmVkID0gbG9jYWxTdG9yYWdlLmdldEl0ZW0oJ3Rhc2tzJyk7XG4gICAgICAgICAgICAgICAgaWYgKHNhdmVkKSB7XG4gICAgICAgICAgICAgICAgICAgIHNldFRhc2tzKEpTT04ucGFyc2Uoc2F2ZWQpKTtcbiAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICB9LCBbXSk7XG5cbiAgICAgICAgICAgIHVzZUVmZmVjdCgoKSA9PiB7XG4gICAgICAgICAgICAgICAgbG9jYWxTdG9yYWdlLnNldEl0ZW0oJ3Rhc2tzJywgSlNPTi5zdHJpbmdpZnkodGFza3MpKTtcbiAgICAgICAgICAgIH0sIFt0YXNrc10pO1xuXG4gICAgICAgICAgICBjb25zdCBhZGRUYXNrID0gKCkgPT4ge1xuICAgICAgICAgICAgICAgIGlmIChpbnB1dFZhbHVlLnRyaW0oKSkge1xuICAgICAgICAgICAgICAgICAgICBzZXRUYXNrcyhbLi4udGFza3MsIHsgXG4gICAgICAgICAgICAgICAgICAgICAgICBpZDogRGF0ZS5ub3coKSwgXG4gICAgICAgICAgICAgICAgICAgICAgICB0ZXh0OiBpbnB1dFZhbHVlLCBcbiAgICAgICAgICAgICAgICAgICAgICAgIGNvbXBsZXRlZDogZmFsc2UsXG4gICAgICAgICAgICAgICAgICAgICAgICBjcmVhdGVkQXQ6IG5ldyBEYXRlKCkudG9JU09TdHJpbmcoKSxcbiAgICAgICAgICAgICAgICAgICAgICAgIGR1ZURhdGU6IGR1ZURhdGUgfHwgbnVsbFxuICAgICAgICAgICAgICAgICAgICB9XSk7XG4gICAgICAgICAgICAgICAgICAgIHNldElucHV0VmFsdWUoJycpO1xuICAgICAgICAgICAgICAgICAgICBzZXREdWVEYXRlKCcnKTtcbiAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICB9O1xuXG4gICAgICAgICAgICBjb25zdCB0b2dnbGVUYXNrID0gKGlkKSA9PiB7XG4gICAgICAgICAgICAgICAgc2V0VGFza3ModGFza3MubWFwKHRhc2sgPT4gXG4gICAgICAgICAgICAgICAgICAgIHRhc2suaWQgPT09IGlkID8geyAuLi50YXNrLCBjb21wbGV0ZWQ6ICF0YXNrLmNvbXBsZXRlZCB9IDogdGFza1xuICAgICAgICAgICAgICAgICkpO1xuICAgICAgICAgICAgfTtcblxuICAgICAgICAgICAgY29uc3QgZGVsZXRlVGFzayA9IChpZCkgPT4ge1xuICAgICAgICAgICAgICAgIHNldFRhc2tzKHRhc2tzLmZpbHRlcih0YXNrID0+IHRhc2suaWQgIT09IGlkKSk7XG4gICAgICAgICAgICB9O1xuXG4gICAgICAgICAgICBjb25zdCBmaWx0ZXJlZFRhc2tzID0gdGFza3MuZmlsdGVyKHRhc2sgPT4ge1xuICAgICAgICAgICAgICAgIGlmIChmaWx0ZXIgPT09ICdhY3RpdmUnKSByZXR1cm4gIXRhc2suY29tcGxldGVkO1xuICAgICAgICAgICAgICAgIGlmIChmaWx0ZXIgPT09ICdjb21wbGV0ZWQnKSByZXR1cm4gdGFzay5jb21wbGV0ZWQ7XG4gICAgICAgICAgICAgICAgcmV0dXJuIHRydWU7XG4gICAgICAgICAgICB9KTtcblxuICAgICAgICAgICAgY29uc3QgYWN0aXZlQ291bnQgPSB0YXNrcy5maWx0ZXIodCA9PiAhdC5jb21wbGV0ZWQpLmxlbmd0aDtcblxuICAgICAgICAgICAgY29uc3QgZm9ybWF0RGF0ZSA9IChkYXRlU3RyaW5nKSA9PiB7XG4gICAgICAgICAgICAgICAgY29uc3QgZGF0ZSA9IG5ldyBEYXRlKGRhdGVTdHJpbmcpO1xuICAgICAgICAgICAgICAgIGNvbnN0IG5vdyA9IG5ldyBEYXRlKCk7XG4gICAgICAgICAgICAgICAgY29uc3QgZGlmZk1zID0gbm93IC0gZGF0ZTtcbiAgICAgICAgICAgICAgICBjb25zdCBkaWZmTWlucyA9IE1hdGguZmxvb3IoZGlmZk1zIC8gNjAwMDApO1xuICAgICAgICAgICAgICAgIGNvbnN0IGRpZmZIb3VycyA9IE1hdGguZmxvb3IoZGlmZk1zIC8gMzYwMDAwMCk7XG4gICAgICAgICAgICAgICAgY29uc3QgZGlmZkRheXMgPSBNYXRoLmZsb29yKGRpZmZNcyAvIDg2NDAwMDAwKTtcblxuICAgICAgICAgICAgICAgIGlmIChkaWZmTWlucyA8IDEpIHJldHVybiAnSnVzdCBub3cnO1xuICAgICAgICAgICAgICAgIGlmIChkaWZmTWlucyA8IDYwKSByZXR1cm4gYCR7ZGlmZk1pbnN9bSBhZ29gO1xuICAgICAgICAgICAgICAgIGlmIChkaWZmSG91cnMgPCAyNCkgcmV0dXJuIGAke2RpZmZIb3Vyc31oIGFnb2A7XG4gICAgICAgICAgICAgICAgaWYgKGRpZmZEYXlzID09PSAxKSByZXR1cm4gJ1llc3RlcmRheSc7XG4gICAgICAgICAgICAgICAgaWYgKGRpZmZEYXlzIDwgNykgcmV0dXJuIGAke2RpZmZEYXlzfWQgYWdvYDtcbiAgICAgICAgICAgICAgICBcbiAgICAgICAgICAgICAgICByZXR1cm4gZGF0ZS50b0xvY2FsZURhdGVTdHJpbmcoJ2VuLVVTJywgeyBcbiAgICAgICAgICAgICAgICAgICAgbW9udGg6ICdzaG9ydCcsIFxuICAgICAgICAgICAgICAgICAgICBkYXk6ICdudW1lcmljJyxcbiAgICAgICAgICAgICAgICAgICAgeWVhcjogZGF0ZS5nZXRGdWxsWWVhcigpICE9PSBub3cuZ2V0RnVsbFllYXIoKSA/ICdudW1lcmljJyA6IHVuZGVmaW5lZFxuICAgICAgICAgICAgICAgIH0pO1xuICAgICAgICAgICAgfTtcblxuICAgICAgICAgICAgY29uc3QgZm9ybWF0RHVlRGF0ZSA9IChkYXRlU3RyaW5nKSA9PiB7XG4gICAgICAgICAgICAgICAgaWYgKCFkYXRlU3RyaW5nKSByZXR1cm4gbnVsbDtcbiAgICAgICAgICAgICAgICBjb25zdCBkYXRlID0gbmV3IERhdGUoZGF0ZVN0cmluZyk7XG4gICAgICAgICAgICAgICAgY29uc3Qgbm93ID0gbmV3IERhdGUoKTtcbiAgICAgICAgICAgICAgICBub3cuc2V0SG91cnMoMCwgMCwgMCwgMCk7XG4gICAgICAgICAgICAgICAgY29uc3QgZHVlRGF0ZVRpbWUgPSBuZXcgRGF0ZShkYXRlKTtcbiAgICAgICAgICAgICAgICBkdWVEYXRlVGltZS5zZXRIb3VycygwLCAwLCAwLCAwKTtcbiAgICAgICAgICAgICAgICBjb25zdCBkaWZmRGF5cyA9IE1hdGguZmxvb3IoKGR1ZURhdGVUaW1lIC0gbm93KSAvIDg2NDAwMDAwKTtcblxuICAgICAgICAgICAgICAgIGlmIChkaWZmRGF5cyA8IDApIHJldHVybiB7IHRleHQ6ICdPdmVyZHVlJywgY29sb3I6ICd0ZXh0LXJlZC01MDAnIH07XG4gICAgICAgICAgICAgICAgaWYgKGRpZmZEYXlzID09PSAwKSByZXR1cm4geyB0ZXh0OiAnVG9kYXknLCBjb2xvcjogJ3RleHQtb3JhbmdlLTUwMCcgfTtcbiAgICAgICAgICAgICAgICBpZiAoZGlmZkRheXMgPT09IDEpIHJldHVybiB7IHRleHQ6ICdUb21vcnJvdycsIGNvbG9yOiAndGV4dC15ZWxsb3ctNTAwJyB9O1xuICAgICAgICAgICAgICAgIGlmIChkaWZmRGF5cyA8IDcpIHJldHVybiB7IHRleHQ6IGAke2RpZmZEYXlzfWQgbGVmdGAsIGNvbG9yOiAndGV4dC1ibHVlLTUwMCcgfTtcbiAgICAgICAgICAgICAgICBcbiAgICAgICAgICAgICAgICByZXR1cm4geyBcbiAgICAgICAgICAgICAgICAgICAgdGV4dDogZGF0ZS50b0xvY2FsZURhdGVTdHJpbmcoJ2VuLVVTJywgeyBtb250aDogJ3Nob3J0JywgZGF5OiAnbnVtZXJpYycgfSksXG4gICAgICAgICAgICAgICAgICAgIGNvbG9yOiAndGV4dC1ncmF5LTUwMCdcbiAgICAgICAgICAgICAgICB9O1xuICAgICAgICAgICAgfTtcblxuICAgICAgICAgICAgY29uc3QgZ2V0VG9kYXlEYXRlID0gKCkgPT4ge1xuICAgICAgICAgICAgICAgIGNvbnN0IHRvZGF5ID0gbmV3IERhdGUoKTtcbiAgICAgICAgICAgICAgICByZXR1cm4gdG9kYXkudG9JU09TdHJpbmcoKS5zcGxpdCgnVCcpWzBdO1xuICAgICAgICAgICAgfTtcblxuICAgICAgICAgICAgcmV0dXJuIChcbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm1pbi1oLXNjcmVlbiBiZy1ncmFkaWVudC10by1iciBmcm9tLXB1cnBsZS01MCB0by1ibHVlLTUwIHAtNCBzbTpwLThcIj5cbiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtYXgtdy0yeGwgbXgtYXV0b1wiPlxuICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJiZy13aGl0ZSByb3VuZGVkLTJ4bCBzaGFkb3cteGwgcC02IHNtOnAtOFwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxoMSBjbGFzc05hbWU9XCJ0ZXh0LTN4bCBzbTp0ZXh0LTR4bCBmb250LWJvbGQgdGV4dC1ncmF5LTgwMCBtYi0yXCI+VGFzayBNYW5hZ2VyPC9oMT5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LWdyYXktNTAwIG1iLTZcIj57YWN0aXZlQ291bnR9IHRhc2t7YWN0aXZlQ291bnQgIT09IDEgPyAncycgOiAnJ30gcmVtYWluaW5nPC9wPlxuXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJzcGFjZS15LTMgbWItNlwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8aW5wdXRcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHR5cGU9XCJ0ZXh0XCJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHZhbHVlPXtpbnB1dFZhbHVlfVxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgb25DaGFuZ2U9eyhlKSA9PiBzZXRJbnB1dFZhbHVlKGUudGFyZ2V0LnZhbHVlKX1cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIG9uS2V5UHJlc3M9eyhlKSA9PiBlLmtleSA9PT0gJ0VudGVyJyAmJiBhZGRUYXNrKCl9XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBwbGFjZWhvbGRlcj1cIldoYXQgbmVlZHMgdG8gYmUgZG9uZT9cIlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPVwidy1mdWxsIHB4LTQgcHktMyBib3JkZXItMiBib3JkZXItZ3JheS0yMDAgcm91bmRlZC1sZyBmb2N1czpvdXRsaW5lLW5vbmUgZm9jdXM6Ym9yZGVyLXB1cnBsZS00MDAgdHJhbnNpdGlvblwiXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC8+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBnYXAtMlwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4LTEgcmVsYXRpdmVcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Q2FsZW5kYXIgc2l6ZT17MjB9IGNsYXNzTmFtZT1cImFic29sdXRlIGxlZnQtMyB0b3AtMS8yIHRyYW5zZm9ybSAtdHJhbnNsYXRlLXktMS8yIHRleHQtZ3JheS00MDBcIiAvPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxpbnB1dFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB0eXBlPVwiZGF0ZVwiXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHZhbHVlPXtkdWVEYXRlfVxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBvbkNoYW5nZT17KGUpID0+IHNldER1ZURhdGUoZS50YXJnZXQudmFsdWUpfVxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBtaW49e2dldFRvZGF5RGF0ZSgpfVxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU9XCJ3LWZ1bGwgcGwtMTAgcHItNCBweS0zIGJvcmRlci0yIGJvcmRlci1ncmF5LTIwMCByb3VuZGVkLWxnIGZvY3VzOm91dGxpbmUtbm9uZSBmb2N1czpib3JkZXItcHVycGxlLTQwMCB0cmFuc2l0aW9uXCJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAvPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YnV0dG9uXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgb25DbGljaz17YWRkVGFza31cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU9XCJiZy1wdXJwbGUtNTAwIGhvdmVyOmJnLXB1cnBsZS02MDAgdGV4dC13aGl0ZSBweC02IHB5LTMgcm91bmRlZC1sZyBmb250LW1lZGl1bSB0cmFuc2l0aW9uIGZsZXggaXRlbXMtY2VudGVyIGdhcC0yXCJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8UGx1cyBzaXplPXsyMH0gLz5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBBZGRcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvYnV0dG9uPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cblxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleCBnYXAtMiBtYi02IG92ZXJmbG93LXgtYXV0b1wiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB7WydhbGwnLCAnYWN0aXZlJywgJ2NvbXBsZXRlZCddLm1hcChmID0+IChcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxidXR0b25cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBrZXk9e2Z9XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gc2V0RmlsdGVyKGYpfVxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT17YHB4LTQgcHktMiByb3VuZGVkLWxnIGZvbnQtbWVkaXVtIHRyYW5zaXRpb24gd2hpdGVzcGFjZS1ub3dyYXAgJHtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZmlsdGVyID09PSBmIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPyAnYmctcHVycGxlLTUwMCB0ZXh0LXdoaXRlJyBcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDogJ2JnLWdyYXktMTAwIHRleHQtZ3JheS02MDAgaG92ZXI6YmctZ3JheS0yMDAnXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfWB9XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAge2YuY2hhckF0KDApLnRvVXBwZXJDYXNlKCkgKyBmLnNsaWNlKDEpfVxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9idXR0b24+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICkpfVxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJzcGFjZS15LTJcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAge2ZpbHRlcmVkVGFza3MubGVuZ3RoID09PSAwID8gKFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwidGV4dC1jZW50ZXIgdGV4dC1ncmF5LTQwMCBweS04XCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAge2ZpbHRlciA9PT0gJ2NvbXBsZXRlZCcgPyAnTm8gY29tcGxldGVkIHRhc2tzIHlldCcgOiAnTm8gdGFza3MgeWV0LiBBZGQgb25lIGFib3ZlISd9XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3A+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICkgOiAoXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBmaWx0ZXJlZFRhc2tzLm1hcCh0YXNrID0+IHtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBjb25zdCBkdWVEYXRlSW5mbyA9IGZvcm1hdER1ZURhdGUodGFzay5kdWVEYXRlKTtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICByZXR1cm4gKFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBrZXk9e3Rhc2suaWR9XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU9XCJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMyBwLTQgYmctZ3JheS01MCByb3VuZGVkLWxnIGhvdmVyOmJnLWdyYXktMTAwIHRyYW5zaXRpb24gZ3JvdXBcIlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YnV0dG9uXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gdG9nZ2xlVGFzayh0YXNrLmlkKX1cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU9XCJmbGV4LXNocmluay0wXCJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB7dGFzay5jb21wbGV0ZWQgPyAoXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwidy02IGgtNiBiZy1wdXJwbGUtNTAwIHJvdW5kZWQtZnVsbCBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlclwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPENoZWNrIHNpemU9ezE2fSBjbGFzc05hbWU9XCJ0ZXh0LXdoaXRlXCIgLz5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgKSA6IChcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPENpcmNsZSBzaXplPXsyNH0gY2xhc3NOYW1lPVwidGV4dC1ncmF5LTMwMCBob3Zlcjp0ZXh0LXB1cnBsZS00MDBcIiAvPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICl9XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2J1dHRvbj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZmxleC0xIG1pbi13LTBcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9e2BibG9jayAke3Rhc2suY29tcGxldGVkID8gJ2xpbmUtdGhyb3VnaCB0ZXh0LWdyYXktNDAwJyA6ICd0ZXh0LWdyYXktNzAwJ31gfT5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAge3Rhc2sudGV4dH1cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3NwYW4+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IGdhcC0zIG10LTEgZmxleC13cmFwXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cInRleHQteHMgdGV4dC1ncmF5LTQwMFwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAge2Zvcm1hdERhdGUodGFzay5jcmVhdGVkQXQpfVxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3NwYW4+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHtkdWVEYXRlSW5mbyAmJiAoXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9e2B0ZXh0LXhzIGZvbnQtbWVkaXVtICR7ZHVlRGF0ZUluZm8uY29sb3J9YH0+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgRHVlOiB7ZHVlRGF0ZUluZm8udGV4dH1cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvc3Bhbj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgKX1cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGJ1dHRvblxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIG9uQ2xpY2s9eygpID0+IGRlbGV0ZVRhc2sodGFzay5pZCl9XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPVwib3BhY2l0eS0wIGdyb3VwLWhvdmVyOm9wYWNpdHktMTAwIHRleHQtcmVkLTQwMCBob3Zlcjp0ZXh0LXJlZC02MDAgdHJhbnNpdGlvbiBmbGV4LXNocmluay0wXCJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8VHJhc2gyIHNpemU9ezE4fSAvPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9idXR0b24+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICk7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9KVxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICApfVxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAge3Rhc2tzLmxlbmd0aCA+IDAgJiYgKFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm10LTYgcHQtNiBib3JkZXItdCBib3JkZXItZ3JheS0yMDAgZmxleCBqdXN0aWZ5LWJldHdlZW4gdGV4dC1zbSB0ZXh0LWdyYXktNTAwXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3Bhbj57dGFza3MubGVuZ3RofSB0b3RhbCB0YXNre3Rhc2tzLmxlbmd0aCAhPT0gMSA/ICdzJyA6ICcnfTwvc3Bhbj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxidXR0b25cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiBzZXRUYXNrcyh0YXNrcy5maWx0ZXIodCA9PiAhdC5jb21wbGV0ZWQpKX1cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU9XCJ0ZXh0LXJlZC00MDAgaG92ZXI6dGV4dC1yZWQtNjAwIHRyYW5zaXRpb25cIlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIENsZWFyIGNvbXBsZXRlZFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9idXR0b24+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICl9XG4gICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICApO1xuICAgICAgICB9XG5cbiAgICAgICAgUmVhY3RET00ucmVuZGVyKDxUYXNrTWFuYWdlciAvPiwgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3Jvb3QnKSk7XG4gICAgIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFDUSxJQUFBQSxNQUFBLEdBQWdDQyxLQUFLO0VBQTdCQyxRQUFRLEdBQUFGLE1BQUEsQ0FBUkUsUUFBUTtFQUFFQyxTQUFT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</script></head>
-<body>
-    <div id="root"><div class="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 p-4 sm:p-8"><div class="max-w-2xl mx-auto"><div class="bg-white rounded-2xl shadow-xl p-6 sm:p-8"><h1 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-2">Task Manager</h1><p class="text-gray-500 mb-6">0 tasks remaining</p><div class="space-y-3 mb-6"><input type="text" placeholder="What needs to be done?" class="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-purple-400 transition" value=""><div class="flex gap-2"><div class="flex-1 relative"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg><input type="date" min="2025-12-19" class="w-full pl-10 pr-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-purple-400 transition" value=""></div><button class="bg-purple-500 hover:bg-purple-600 text-white px-6 py-3 rounded-lg font-medium transition flex items-center gap-2"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>Add</button></div></div><div class="flex gap-2 mb-6 overflow-x-auto"><button class="px-4 py-2 rounded-lg font-medium transition whitespace-nowrap bg-purple-500 text-white">All</button><button class="px-4 py-2 rounded-lg font-medium transition whitespace-nowrap bg-gray-100 text-gray-600 hover:bg-gray-200">Active</button><button class="px-4 py-2 rounded-lg font-medium transition whitespace-nowrap bg-gray-100 text-gray-600 hover:bg-gray-200">Completed</button></div><div class="space-y-2"><p class="text-center text-gray-400 py-8">No tasks yet. Add one above!</p></div></div></div></div></div>
 
-    <script src="./task_files/react.production.min.js.download"></script>
-    <script src="./task_files/react-dom.production.min.js.download"></script>
-    <script src="./task_files/babel.min.js.download"></script>
-
-    <script type="text/babel">
-        const { useState, useEffect } = React;
-
-        const Check = ({ size = 24, className = "" }) => (
-            <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
-                <polyline points="20 6 9 17 4 12"></polyline>
-            </svg>
-        );
-
-        const Trash2 = ({ size = 24, className = "" }) => (
-            <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
-                <polyline points="3 6 5 6 21 6"></polyline>
-                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
-                <line x1="10" y1="11" x2="10" y2="17"></line>
-                <line x1="14" y1="11" x2="14" y2="17"></line>
-            </svg>
-        );
-
-        const Plus = ({ size = 24, className = "" }) => (
-            <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
-                <line x1="12" y1="5" x2="12" y2="19"></line>
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-            </svg>
-        );
-
-        const Circle = ({ size = 24, className = "" }) => (
-            <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
-                <circle cx="12" cy="12" r="10"></circle>
-            </svg>
-        );
-
-        const Calendar = ({ size = 24, className = "" }) => (
-            <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
-                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                <line x1="16" y1="2" x2="16" y2="6"></line>
-                <line x1="8" y1="2" x2="8" y2="6"></line>
-                <line x1="3" y1="10" x2="21" y2="10"></line>
-            </svg>
-        );
-
-        function TaskManager() {
-            const [tasks, setTasks] = useState([]);
-            const [inputValue, setInputValue] = useState('');
-            const [dueDate, setDueDate] = useState('');
-            const [filter, setFilter] = useState('all');
-
-            useEffect(() => {
-                const saved = localStorage.getItem('tasks');
-                if (saved) {
-                    setTasks(JSON.parse(saved));
-                }
-            }, []);
-
-            useEffect(() => {
-                localStorage.setItem('tasks', JSON.stringify(tasks));
-            }, [tasks]);
-
-            const addTask = () => {
-                if (inputValue.trim()) {
-                    setTasks([...tasks, { 
-                        id: Date.now(), 
-                        text: inputValue, 
-                        completed: false,
-                        createdAt: new Date().toISOString(),
-                        dueDate: dueDate || null
-                    }]);
-                    setInputValue('');
-                    setDueDate('');
-                }
-            };
-
-            const toggleTask = (id) => {
-                setTasks(tasks.map(task => 
-                    task.id === id ? { ...task, completed: !task.completed } : task
-                ));
-            };
-
-            const deleteTask = (id) => {
-                setTasks(tasks.filter(task => task.id !== id));
-            };
-
-            const filteredTasks = tasks.filter(task => {
-                if (filter === 'active') return !task.completed;
-                if (filter === 'completed') return task.completed;
-                return true;
-            });
-
-            const activeCount = tasks.filter(t => !t.completed).length;
-
-            const formatDate = (dateString) => {
-                const date = new Date(dateString);
-                const now = new Date();
-                const diffMs = now - date;
-                const diffMins = Math.floor(diffMs / 60000);
-                const diffHours = Math.floor(diffMs / 3600000);
-                const diffDays = Math.floor(diffMs / 86400000);
-
-                if (diffMins < 1) return 'Just now';
-                if (diffMins < 60) return `${diffMins}m ago`;
-                if (diffHours < 24) return `${diffHours}h ago`;
-                if (diffDays === 1) return 'Yesterday';
-                if (diffDays < 7) return `${diffDays}d ago`;
-                
-                return date.toLocaleDateString('en-US', { 
-                    month: 'short', 
-                    day: 'numeric',
-                    year: date.getFullYear() !== now.getFullYear() ? 'numeric' : undefined
-                });
-            };
-
-            const formatDueDate = (dateString) => {
-                if (!dateString) return null;
-                const date = new Date(dateString);
-                const now = new Date();
-                now.setHours(0, 0, 0, 0);
-                const dueDateTime = new Date(date);
-                dueDateTime.setHours(0, 0, 0, 0);
-                const diffDays = Math.floor((dueDateTime - now) / 86400000);
-
-                if (diffDays < 0) return { text: 'Overdue', color: 'text-red-500' };
-                if (diffDays === 0) return { text: 'Today', color: 'text-orange-500' };
-                if (diffDays === 1) return { text: 'Tomorrow', color: 'text-yellow-500' };
-                if (diffDays < 7) return { text: `${diffDays}d left`, color: 'text-blue-500' };
-                
-                return { 
-                    text: date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
-                    color: 'text-gray-500'
-                };
-            };
-
-            const getTodayDate = () => {
-                const today = new Date();
-                return today.toISOString().split('T')[0];
-            };
-
-            return (
-                <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 p-4 sm:p-8">
-                    <div className="max-w-2xl mx-auto">
-                        <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8">
-                            <h1 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-2">Task Manager</h1>
-                            <p className="text-gray-500 mb-6">{activeCount} task{activeCount !== 1 ? 's' : ''} remaining</p>
-
-                            <div className="space-y-3 mb-6">
-                                <input
-                                    type="text"
-                                    value={inputValue}
-                                    onChange={(e) => setInputValue(e.target.value)}
-                                    onKeyPress={(e) => e.key === 'Enter' && addTask()}
-                                    placeholder="What needs to be done?"
-                                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-purple-400 transition"
-                                />
-                                <div className="flex gap-2">
-                                    <div className="flex-1 relative">
-                                        <Calendar size={20} className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
-                                        <input
-                                            type="date"
-                                            value={dueDate}
-                                            onChange={(e) => setDueDate(e.target.value)}
-                                            min={getTodayDate()}
-                                            className="w-full pl-10 pr-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-purple-400 transition"
-                                        />
-                                    </div>
-                                    <button
-                                        onClick={addTask}
-                                        className="bg-purple-500 hover:bg-purple-600 text-white px-6 py-3 rounded-lg font-medium transition flex items-center gap-2"
-                                    >
-                                        <Plus size={20} />
-                                        Add
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div className="flex gap-2 mb-6 overflow-x-auto">
-                                {['all', 'active', 'completed'].map(f => (
-                                    <button
-                                        key={f}
-                                        onClick={() => setFilter(f)}
-                                        className={`px-4 py-2 rounded-lg font-medium transition whitespace-nowrap ${
-                                            filter === f 
-                                                ? 'bg-purple-500 text-white' 
-                                                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-                                        }`}
-                                    >
-                                        {f.charAt(0).toUpperCase() + f.slice(1)}
-                                    </button>
-                                ))}
-                            </div>
-
-                            <div className="space-y-2">
-                                {filteredTasks.length === 0 ? (
-                                    <p className="text-center text-gray-400 py-8">
-                                        {filter === 'completed' ? 'No completed tasks yet' : 'No tasks yet. Add one above!'}
-                                    </p>
-                                ) : (
-                                    filteredTasks.map(task => {
-                                        const dueDateInfo = formatDueDate(task.dueDate);
-                                        return (
-                                            <div
-                                                key={task.id}
-                                                className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition group"
-                                            >
-                                                <button
-                                                    onClick={() => toggleTask(task.id)}
-                                                    className="flex-shrink-0"
-                                                >
-                                                    {task.completed ? (
-                                                        <div className="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center">
-                                                            <Check size={16} className="text-white" />
-                                                        </div>
-                                                    ) : (
-                                                        <Circle size={24} className="text-gray-300 hover:text-purple-400" />
-                                                    )}
-                                                </button>
-                                                <div className="flex-1 min-w-0">
-                                                    <span className={`block ${task.completed ? 'line-through text-gray-400' : 'text-gray-700'}`}>
-                                                        {task.text}
-                                                    </span>
-                                                    <div className="flex gap-3 mt-1 flex-wrap">
-                                                        <span className="text-xs text-gray-400">
-                                                            {formatDate(task.createdAt)}
-                                                        </span>
-                                                        {dueDateInfo && (
-                                                            <span className={`text-xs font-medium ${dueDateInfo.color}`}>
-                                                                Due: {dueDateInfo.text}
-                                                            </span>
-                                                        )}
-                                                    </div>
-                                                </div>
-                                                <button
-                                                    onClick={() => deleteTask(task.id)}
-                                                    className="opacity-0 group-hover:opacity-100 text-red-400 hover:text-red-600 transition flex-shrink-0"
-                                                >
-                                                    <Trash2 size={18} />
-                                                </button>
-                                            </div>
-                                        );
-                                    })
-                                )}
-                            </div>
-
-                            {tasks.length > 0 && (
-                                <div className="mt-6 pt-6 border-t border-gray-200 flex justify-between text-sm text-gray-500">
-                                    <span>{tasks.length} total task{tasks.length !== 1 ? 's' : ''}</span>
-                                    <button
-                                        onClick={() => setTasks(tasks.filter(t => !t.completed))}
-                                        className="text-red-400 hover:text-red-600 transition"
-                                    >
-                                        Clear completed
-                                    </button>
-                                </div>
-                            )}
-                        </div>
-                    </div>
-                </div>
-            );
-        }
-
-        ReactDOM.render(<TaskManager />, document.getElementById('root'));
-    </script>
-
-</body></html>
+    ReactDOM.createRoot(document.getElementById("root")).render(<TaskManager />);
+  </script>
+</body>
+</html>
